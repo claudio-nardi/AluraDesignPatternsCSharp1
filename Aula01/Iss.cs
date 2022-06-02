@@ -8,9 +8,11 @@ namespace Aula01
 {
 	public class Iss : IImposto
 	{
+		private const double aliquota = 0.06;
+
 		public double Calcula(Orcamento orcamento)
 		{
-			return orcamento.Valor * 0.06;
+			return orcamento.Valor * aliquota;
 		}
 	}
 }
