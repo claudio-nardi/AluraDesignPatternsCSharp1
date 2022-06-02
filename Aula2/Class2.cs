@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Aula02
 {
-	public class SemDesconto : IDesconto
+	internal class Class2 : IDesconto
 	{
-		public IDesconto ProximoDesconto { get; set; }
+		public IDesconto ProximoDesconto { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
 		public double Desconta(Orcamento orcamento)
 		{
-			return 0;
+			throw new NotImplementedException();
 		}
 	}
 }

@@ -8,16 +8,17 @@ namespace Aula02
 		{
 			var calculador = new CalculadorDeDescontos();
 
-			Orcamento orcamento = new Orcamento(1000);
-			orcamento.Itens.Add(new Item("Caneta", 522));
-			orcamento.Itens.Add(new Item("Bike", 3000));
-			orcamento.Itens.Add(new Item("Caneca", 100));
-			orcamento.Itens.Add(new Item("Caneta", 522));
-			orcamento.Itens.Add(new Item("Bike", 3000));
-			orcamento.Itens.Add(new Item("Caneca", 100));
-			orcamento.Itens.Add(new Item("Caneta", 522));
-			orcamento.Itens.Add(new Item("Caneta", 522));
+			Orcamento orcamento = new Orcamento();
+			orcamento.AdicionaItem(new Item("Caneta", 522));
+			orcamento.AdicionaItem(new Item("Bike", 3000));
+			orcamento.AdicionaItem(new Item("Caneca", 100));
+			orcamento.AdicionaItem(new Item("Caneta", 522));
+			orcamento.AdicionaItem(new Item("Bike", 3000));
+			orcamento.AdicionaItem(new Item("Caneca", 100));
+			orcamento.AdicionaItem(new Item("Caneta", 522));
+			orcamento.AdicionaItem(new Item("Caneta", 522));
 
+			Console.WriteLine(orcamento.Valor);
 			Console.WriteLine(calculador.Calcula(orcamento));
 		}
 	}

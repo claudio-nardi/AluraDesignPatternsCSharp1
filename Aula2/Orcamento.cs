@@ -8,13 +8,19 @@ namespace Aula02
 {
 	public class Orcamento
 	{
-		public double Valor { get; private set; }
+		public double Valor { get; private set ; }
 		public List<Item> Itens { get; private set; }
 
-		public Orcamento(double valor)
+		public void AdicionaItem(Item item)
 		{
-			this.Valor = valor;
-			this.Itens = new List<Item>();
+			Itens.Add(item);
+			Valor += item.Valor;
+		}
+		public Orcamento()
+		{
+			//this.Valor = valor;
+			Itens = new List<Item>();
+
 		}
 	}
 }
