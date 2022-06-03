@@ -21,7 +21,12 @@ namespace Aula02
 				return orcamento.Valor * 0.05;
 			}
 
-			return ProximoDesconto.Desconta(orcamento);
+			if (ProximoDesconto != null)
+			{
+				return ProximoDesconto.Desconta(orcamento);
+			}
+
+			return 0;
 
 
 		}

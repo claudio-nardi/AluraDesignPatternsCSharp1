@@ -25,6 +25,13 @@ namespace Aula02
 			{
 				return orcamento.Valor * 0.07;
 			}
+
+			// Interrompe cadeia não havendo mais descontos
+			if (ProximoDesconto == null)
+			{
+				return 0;
+			}
+
 			return ProximoDesconto.Desconta(orcamento);
 		}
 	}

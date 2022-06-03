@@ -13,7 +13,7 @@ namespace Aula02
 			orcamento.AdicionaItem(new Item("Bike", 30));
 			orcamento.AdicionaItem(new Item("Caneta", 10));
 			orcamento.AdicionaItem(new Item("Bike", 30));
-			orcamento.AdicionaItem(new Item("Lapis", 100));
+			//orcamento.AdicionaItem(new Item("Lapis", 100));
 
 
 			Console.WriteLine(orcamento.Valor);

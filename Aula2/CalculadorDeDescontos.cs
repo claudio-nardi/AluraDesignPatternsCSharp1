@@ -13,11 +13,11 @@ namespace Aula02
 			var d1 = new DescontoMaisDe5Itens();
 			var d2 = new DescontoAcimaDeQuinhentos();
 			var d3 = new DescontoVendaCasada();
-			var d4 = new SemDesconto();
+			//var d4 = new SemDesconto();
 
 			d1.ProximoDesconto = d2;
 			d2.ProximoDesconto = d3;
-			d3.ProximoDesconto = d4;
+			//d3.ProximoDesconto = d4;
 
 			return d1.Desconta(orcamento);
 		}
