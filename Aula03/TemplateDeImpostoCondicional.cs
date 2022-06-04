@@ -20,9 +20,9 @@ namespace Aula03
 			}
 		}
 
-		public abstract double MinimaTaxacao(Orcamento orcamento);
-		public abstract double MaximaTaxacao(Orcamento orcamento);
-		public abstract bool DeveUsarTaxacaoMaxima(Orcamento orcamento);
+		protected abstract double MinimaTaxacao(Orcamento orcamento);
+		protected abstract double MaximaTaxacao(Orcamento orcamento);
+		protected abstract bool DeveUsarTaxacaoMaxima(Orcamento orcamento);
 
 	}
 }
