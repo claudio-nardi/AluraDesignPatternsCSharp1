@@ -10,7 +10,7 @@ namespace ExercicioAula3
 	{
 		public override void imprimeCabecalho()
 		{
-			Console.Write("Banco Bradesco SA");
+			Console.WriteLine("Banco Bradesco SA");
 			Console.WriteLine("Cidade de Deus s/n - Osasco - SP");
 			Console.WriteLine("Telefone: 4545-4545\n");
 		}
@@ -27,6 +27,7 @@ namespace ExercicioAula3
 		public override void imprimeRodape()
 		{
 			Console.WriteLine("\ne-mail: atendimento@bradesco.com.br");
+			Console.WriteLine();
 			Console.WriteLine(DateTime.Now);
 		}
 	}

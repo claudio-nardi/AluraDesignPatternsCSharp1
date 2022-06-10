@@ -36,6 +36,7 @@ namespace ExercicioAula3
 			}
 
 			relatorioSimples.Imprime(listaContas);
+			Console.WriteLine();
 			relatorioCompleto.Imprime(listaContas);
 
 		}
