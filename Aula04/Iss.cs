@@ -16,6 +16,7 @@ namespace Aula04
 
 		public override double Calcula(Orcamento orcamento)
 		{
+			Console.WriteLine("Passou ISS");
 			return orcamento.Valor * aliquota + base.CalculaOutroImposto(orcamento);
 		}
 

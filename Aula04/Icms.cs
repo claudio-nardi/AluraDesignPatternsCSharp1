@@ -15,6 +15,7 @@ namespace Aula04
 
 		public override double Calcula(Orcamento orcamento)
 		{
+			Console.WriteLine("Passou ICMS");
 			return orcamento.Valor * 0.10 + CalculaOutroImposto(orcamento);
 		}
 	}

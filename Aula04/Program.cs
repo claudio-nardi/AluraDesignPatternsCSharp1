@@ -12,29 +12,17 @@ namespace Aula04
 			orcamento.AdicionaItem(new Item("Caneta1", 890));
 			orcamento.AdicionaItem(new Item("Bike1", 30));
 
-			Imposto iss = new ImpostoMuitoAlto(new Iss());
+			Imposto icpp = new ICPP();
+			Console.WriteLine("ICPP: "+icpp.Calcula(orcamento));
+			Imposto ikcv = new IKCV();
+			Console.WriteLine("IKCV: "+ikcv.Calcula(orcamento));
 
+			Imposto iss = new Iss(new Icms());
 			Console.WriteLine(iss.Calcula(orcamento));
+			Imposto imposto2 = new ICPP(new IKCV());
 
-
-			//var orcamento = new Orcamento();
-			//var icpp = new ICPP();
-			//var ikcv = new IKCV();
-			//var ihit = new IHIT();
-
-			//orcamento.AdicionaItem(new Item("Caneta", 50));
-			//orcamento.AdicionaItem(new Item("Bike", 30));
-			//orcamento.AdicionaItem(new Item("Caneta1", 890));
-			//orcamento.AdicionaItem(new Item("Bike1", 30));
-
-			//Console.WriteLine(orcamento.Valor);
-
-			//Console.Write("ICPP->");
-			//new CalculadoraDeImpostos(orcamento, icpp);
-			//Console.Write("IKCV->");
-			//new CalculadoraDeImpostos(orcamento, ikcv);
-			//Console.Write("IHIT->");
-			//new CalculadoraDeImpostos(orcamento, ihit);
+			Console.WriteLine(imposto2.Calcula(orcamento));
+						
 		}
 	}
 }
