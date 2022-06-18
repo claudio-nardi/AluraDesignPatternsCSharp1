@@ -34,9 +34,9 @@ namespace ExercicioAula06
 			return this;
 		}
 
-		public NFBuilder NaDataAtual()
+		public NFBuilder ComData(DateTime data)
 		{
-			this.Data = DateTime.Now;
+			this.Data = data;
 			return this;
 		}
 
@@ -48,6 +48,8 @@ namespace ExercicioAula06
 
 		public NotaFiscal constroiNF()
 		{
+			if (Data.Equals(Convert.ToDateTime("01/01/0001"))) Data = DateTime.Now;
+		
 			return new NotaFiscal(RazaoSocial, Cnpj, Data, ValorTotal, Impostos, todosItens, Observacoes);
 
 		}

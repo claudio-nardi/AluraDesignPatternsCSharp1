@@ -25,11 +25,12 @@ namespace ExercicioAula06
 							SetDescricao("item 3").
 							SetValor(300).
 							ConstroiItem()).
-					NaDataAtual().
+					ComData(Convert.ToDateTime("16/10/1972")).
 					ComObs("Entregar na rua pessoa").
 					constroiNF();
 			Console.WriteLine(nf.ValorTotal);
 			Console.WriteLine(nf.Impostos);
+			Console.WriteLine(nf.DataDeEmissao);
 		}
 	}
 }
