@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aula07_Observer
+namespace Aula06_Builder
+
 {
 	public class ItemDaNota
 	{
